@@ -8,6 +8,7 @@
       max="2147483647"
       pattern="[0-9]*"
       @input="(e) => (e.target.value = e.target.value.replace(/\D/g, ''))"
+    />
     <label>XP</label>
     <input
       type="number"
@@ -16,6 +17,7 @@
       max="2147483647"
       pattern="[0-9]*"
       @input="(e) => (e.target.value = e.target.value.replace(/\D/g, ''))"
+    />
 
     <div style="margin-top: 12px">
       <label>Character</label>
@@ -39,6 +41,7 @@
         <option
           v-for="(b, idx) in state.boards"
           :key="idx"
+          :value="b.dataTag || b.id || b"
         >
           {{
             (state.boardsLinks &&
@@ -53,22 +56,13 @@
     </div>
 
     <div style="margin-top: 8px">
-      <label>Skin</label>
-      <select v-model="state.selectedSkin">
-        <option :value="null">-- keep current --</option>
-        <option v-for="sk in skinsList()" :key="sk.id" :value="sk.id">
-          {{ sk.name }} ({{ sk.id }})
-        </option>
-      </select>
-    </div>
-
-    <div style="margin-top: 8px">
       <label>District</label>
       <select v-model="state.selectedDistrict">
         <option :value="null">-- keep current --</option>
         <option
           v-for="d in state.districts"
           :key="d.dataTag || d.id || d"
+          :value="d.dataTag || d.id || d"
         >
           {{ d.name || d.ladderId || d.id || d }}
         </option>
@@ -76,9 +70,6 @@
     </div>
 
     <div style="margin-top: 12px; display: flex; gap: 8px; align-items: center">
-      <button class="btn" @click.prevent="$emit('unlockdistricts')">
-        Unlock All Districts
-      </button>
       <button class="btn" @click.prevent="$emit('refresh')">
         Refresh Data
       </button>
@@ -88,7 +79,7 @@
 
 <script setup>
 defineProps(["state", "skinsList"]);
-const emit = defineEmits(["unlockdistricts", "refresh"]);
+const emit = defineEmits(["refresh"]);
 </script>
 
 <style scoped></style>

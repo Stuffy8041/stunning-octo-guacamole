@@ -18,7 +18,7 @@ const FILENAMES = [
   "characters_links.json",
   "districts_data.json",
   "surfers_data.json",
-  "surfersskins_data.json"
+  "surfersskins_data.json",
 ];
 
 const state = reactive({
@@ -33,7 +33,7 @@ const state = reactive({
   selectedCharacter: null,
   selectedBoard: null,
   selectedSkin: null,
-  selectedDistrict: null
+  selectedDistrict: null,
 });
 
 const TAGS = {
@@ -42,7 +42,7 @@ const TAGS = {
   REVIVE: 1669706535,
   BOARDTOKENS: -1509662453,
   CHARTOKENS: -1878560402,
-  TICKETS: 722065917
+  TICKETS: 722065917,
 };
 const uiSurfers = ref([]);
 const uiBoards = ref([]);
@@ -57,7 +57,7 @@ async function loadGameData() {
   const remote = await fetchFilesFromLatestRelease(
     GITHUB_OWNER,
     GITHUB_REPO,
-    FILENAMES
+    FILENAMES,
   );
   for (const f of FILENAMES) {
     let data = remote[f];
@@ -89,27 +89,47 @@ function buildUiArrays() {
 
   // helper to normalize a character name to a key used in skins map
   const normKey = (v) =>
-    v && String(v).toLowerCase().replace(/[^a-z0-9]/g, "") ? String(v).toLowerCase().replace(/[^a-z0-9]/g, "") : null;
+    v &&
+    String(v)
+      .toLowerCase()
+      .replace(/[^a-z0-9]/g, "")
+      ? String(v)
+          .toLowerCase()
+          .replace(/[^a-z0-9]/g, "")
+      : null;
 
   if (Array.isArray(surfersData)) {
     surfersData.forEach((item, idx) => {
-      const idVal = item && typeof item === "object" ? item.dataTag || item.id || item : item;
+      const idVal =
+        item && typeof item === "object"
+          ? item.dataTag || item.id || item
+          : item;
       const profile =
         (guiInner.value && guiInner.value.surferProfiles
           ? guiInner.value.surferProfiles
           : []
         ).find((p) => String(p.id) === String(idVal)) || {};
 
-      const rawName = (state.charactersLinks && state.charactersLinks[idx] && state.charactersLinks[idx].name) || (item && item.name) || item && item.key || null;
+      const rawName =
+        (state.charactersLinks &&
+          state.charactersLinks[idx] &&
+          state.charactersLinks[idx].name) ||
+        (item && item.name) ||
+        (item && item.key) ||
+        null;
       const name = rawName || String(idVal);
-      const sel = profile && profile.selectedSkin != null ? profile.selectedSkin : null;
+      const sel =
+        profile && profile.selectedSkin != null ? profile.selectedSkin : null;
 
       // build allowed skins for this surfer from state.skins if available
       let allowedSkins = [];
       try {
-        const k = normKey(rawName || item && item.key || "");
+        const k = normKey(rawName || (item && item.key) || "");
         if (k && state.skins && state.skins[k]) {
-          allowedSkins = Object.keys(state.skins[k]).map((n) => ({ id: state.skins[k][n], name: n }));
+          allowedSkins = Object.keys(state.skins[k]).map((n) => ({
+            id: state.skins[k][n],
+            name: n,
+          }));
         } else if (item && Array.isArray(item.skins)) {
           // new format: surfer item directly lists allowed skin ids
           allowedSkins = item.skins.map((sid) => {
@@ -139,26 +159,36 @@ function buildUiArrays() {
         highScore: profile.highScore || 0,
         // normalize 0 (no skin) to null so selects show "none"
         selectedSkin: sel === 0 ? null : sel,
-        allowedSkins
+        allowedSkins,
       });
     });
   } else if (surfersData && typeof surfersData === "object") {
     // old format: object mapping key -> id
     Object.keys(surfersData).forEach((key, idx) => {
       const val = surfersData[key];
-      const idVal = val && typeof val === "object" ? val.dataTag || val.id || val : val;
+      const idVal =
+        val && typeof val === "object" ? val.dataTag || val.id || val : val;
       const profile =
         (guiInner.value && guiInner.value.surferProfiles
           ? guiInner.value.surferProfiles
           : []
         ).find((p) => String(p.id) === String(idVal)) || {};
-      const name = (state.charactersLinks && state.charactersLinks[idx] && state.charactersLinks[idx].name) || (val && val.name) || key;
-      const sel = profile && profile.selectedSkin != null ? profile.selectedSkin : null;
+      const name =
+        (state.charactersLinks &&
+          state.charactersLinks[idx] &&
+          state.charactersLinks[idx].name) ||
+        (val && val.name) ||
+        key;
+      const sel =
+        profile && profile.selectedSkin != null ? profile.selectedSkin : null;
 
       let allowedSkins = [];
       try {
         if (state.skins && state.skins[key]) {
-          allowedSkins = Object.keys(state.skins[key]).map((n) => ({ id: state.skins[key][n], name: n }));
+          allowedSkins = Object.keys(state.skins[key]).map((n) => ({
+            id: state.skins[key][n],
+            name: n,
+          }));
         }
       } catch (e) {}
 
@@ -169,7 +199,7 @@ function buildUiArrays() {
         level: profile.level || 1,
         highScore: profile.highScore || 0,
         selectedSkin: sel === 0 ? null : sel,
-        allowedSkins
+        allowedSkins,
       });
     });
   }
@@ -191,7 +221,7 @@ function buildUiArrays() {
       id: idVal,
       name,
       isUnlocked: !!profile.isUnlocked,
-      level: profile.level || 1
+      level: profile.level || 1,
     };
   });
 }
@@ -312,7 +342,7 @@ function readToInner() {
   guiInner.value.surferProfiles = guiInner.value.surferProfiles || [];
   uiSurfers.value.forEach((u) => {
     const exists = guiInner.value.surferProfiles.find(
-      (p) => String(p.id) === String(u.id)
+      (p) => String(p.id) === String(u.id),
     );
     if (exists) {
       exists.isUnlocked = !!u.isUnlocked;
@@ -326,7 +356,7 @@ function readToInner() {
         isUnlocked: !!u.isUnlocked,
         wasSeen: !!u.isUnlocked,
         level: Math.min(u.level || 1, 20),
-        highScore: u.highScore || 0
+        highScore: u.highScore || 0,
       });
     }
   });
@@ -334,7 +364,7 @@ function readToInner() {
   guiInner.value.boardProfiles = guiInner.value.boardProfiles || [];
   uiBoards.value.forEach((u) => {
     const exists = guiInner.value.boardProfiles.find(
-      (p) => String(p.id) === String(u.id)
+      (p) => String(p.id) === String(u.id),
     );
     if (exists) {
       exists.isUnlocked = !!u.isUnlocked;
@@ -345,7 +375,7 @@ function readToInner() {
         id: u.id,
         isUnlocked: !!u.isUnlocked,
         wasSeen: !!u.isUnlocked,
-        level: Math.min(u.level || 1, 20)
+        level: Math.min(u.level || 1, 20),
       });
     }
   });
@@ -358,21 +388,10 @@ function readToInner() {
   return guiInner.value;
 }
 
-async function unlockDistrictsAll() {
-  if (!guiInner.value) guiInner.value = {};
-  try {
-    unlockAllDistricts(guiInner.value, state.districts || []);
-    populateFrom(guiInner.value);
-  } catch (e) {
-    console.error(e);
-  }
-}
-
 defineExpose({
   populateFrom,
   readToInner,
-  unlockDistrictsAll,
-  loadGameData: loadGameData
+  loadGameData: loadGameData,
 });
 
 onMounted(async () => {
@@ -426,14 +445,16 @@ function applySpPoints() {
   <div id="guiEditor">
     <div
       class="tabs"
-      style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px">
+      style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 12px"
+    >
       <button
         class="tab active"
         @click="
           (e) => {
             switchTab('wallet', e.target);
           }
-        ">
+        "
+      >
         Wallet
       </button>
       <button
@@ -442,7 +463,8 @@ function applySpPoints() {
           (e) => {
             switchTab('player', e.target);
           }
-        ">
+        "
+      >
         Player
       </button>
       <button
@@ -451,7 +473,8 @@ function applySpPoints() {
           (e) => {
             switchTab('surfers', e.target);
           }
-        ">
+        "
+      >
         Surfers
       </button>
       <button
@@ -460,7 +483,8 @@ function applySpPoints() {
           (e) => {
             switchTab('boards', e.target);
           }
-        ">
+        "
+      >
         Boards
       </button>
       <button
@@ -469,7 +493,8 @@ function applySpPoints() {
           (e) => {
             switchTab('season', e.target);
           }
-        ">
+        "
+      >
         Season
       </button>
     </div>
@@ -479,8 +504,8 @@ function applySpPoints() {
     <PlayerPanel
       :state="state"
       :skinsList="skinsList"
-      @unlockdistricts="unlockDistrictsAll"
-      @refresh="loadGameData" />
+      @refresh="loadGameData"
+    />
 
     <SurfersGrid :uiSurfers="uiSurfers" :skinsList="skinsList" />
 
