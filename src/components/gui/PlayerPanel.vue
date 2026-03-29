@@ -78,7 +78,7 @@
 </template>
 
 <script setup>
-defineProps(["state", "skinsList"]);
+defineProps(["state"]);
 const emit = defineEmits(["refresh"]);
 </script>
 

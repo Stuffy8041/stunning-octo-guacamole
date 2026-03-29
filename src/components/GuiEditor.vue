@@ -32,7 +32,6 @@ const state = reactive({
   boardsLinks: [],
   selectedCharacter: null,
   selectedBoard: null,
-  selectedSkin: null,
   selectedDistrict: null,
 });
 
@@ -232,15 +231,6 @@ function populateFrom(finalData) {
   ensureSelectables(guiInner.value);
   state.selectedCharacter = guiInner.value.character ?? null;
   state.selectedBoard = guiInner.value.selectedBoard ?? null;
-  // find first non-zero selectedSkin from any surfer profile
-  state.selectedSkin = null;
-  const sps = guiInner.value.surferProfiles || [];
-  for (const p of sps) {
-    if (p && p.selectedSkin != null && p.selectedSkin !== 0) {
-      state.selectedSkin = p.selectedSkin;
-      break;
-    }
-  }
   state.selectedDistrict = guiInner.value.district ?? null;
 
   buildUiArrays();
@@ -330,14 +320,6 @@ function readToInner() {
     guiInner.value.selectedBoard = state.selectedBoard;
   if (state.selectedDistrict != null)
     guiInner.value.district = state.selectedDistrict;
-
-  if (
-    state.selectedSkin != null &&
-    Array.isArray(guiInner.value.surferProfiles)
-  ) {
-    const sp = guiInner.value.surferProfiles[0];
-    if (sp) sp.selectedSkin = state.selectedSkin;
-  }
 
   guiInner.value.surferProfiles = guiInner.value.surferProfiles || [];
   uiSurfers.value.forEach((u) => {
@@ -503,7 +485,6 @@ function applySpPoints() {
 
     <PlayerPanel
       :state="state"
-      :skinsList="skinsList"
       @refresh="loadGameData"
     />
 
