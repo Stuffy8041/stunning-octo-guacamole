@@ -13,7 +13,7 @@
           type="number"
           id="sp-points-val"
           min="0"
-          class="border border-gray-300 rounded-md px-2 py-1 w-20 text-right focus:outline-none focus:ring-2 focus:ring-blue-400"
+          class="border border-gray-300 rounded-md px-2 py-1 w-20 focus:outline-none focus:ring-2 focus:ring-blue-400"
         />
 
         <button class="btn" @click.prevent="$emit('apply-sp')">Set</button>

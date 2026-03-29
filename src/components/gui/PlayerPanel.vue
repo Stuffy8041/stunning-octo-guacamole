@@ -21,7 +21,7 @@
       <label>Character</label>
       <select v-model="state.selectedCharacter">
         <option :value="null">-- keep current --</option>
-        <option v-for="(c, idx) in state.surfers" :key="idx" :value="c">
+        <option v-for="(c, key, idx) in state.surfers" :key="key" :value="c">
           {{
             (state.charactersLinks &&
               state.charactersLinks[idx] &&
