@@ -1,12 +1,9 @@
 <template>
   <div id="tab-season" class="panel p-4" style="display: none">
-    <div id="sp-status" class="mb-3 font-semibold text-gray-700"></div>
+    <div id="sp-status" class="mb-3 font-semibold text-gray-700">Season Pass: INACTIVE</div>
 
-    <button
-      id="sp-btn"
-      class="btn bg-blue-500 hover:bg-blue-600 text-white px-4 py-2 rounded-md mb-4"
-      @click.prevent="$emit('toggle-sp')">
-      Toggle SP
+    <button id="sp-btn" class="btn" @click.prevent="$emit('toggle-sp')">
+      Unlock Season Pass
     </button>
 
     <div id="sp-points-section">
@@ -16,12 +13,10 @@
           type="number"
           id="sp-points-val"
           min="0"
-          class="border border-gray-300 rounded-md px-2 py-1 w-20 text-right focus:outline-none focus:ring-2 focus:ring-blue-400" />
-        <button
-          class="btn bg-green-500 hover:bg-green-600 text-white px-3 py-1 rounded-md"
-          @click.prevent="$emit('apply-sp')">
-          Apply
-        </button>
+          class="border border-gray-300 rounded-md px-2 py-1 w-20 text-right focus:outline-none focus:ring-2 focus:ring-blue-400"
+        />
+
+        <button class="btn" @click.prevent="$emit('apply-sp')">Set</button>
       </div>
     </div>
 

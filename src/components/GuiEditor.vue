@@ -239,9 +239,13 @@ function populateFrom(finalData) {
   const spBtn = document.getElementById("sp-btn");
   setInput("sp-points-val", guiInner.value.seasonPassPoints || 0);
   if (spStatus) {
-    spStatus.textContent = guiInner.value.seasonPassPurchased
+    const isPurchased = guiInner.value.seasonPassPurchased;
+    spStatus.textContent = isPurchased
       ? "Season Pass: ACTIVE ✓"
       : "Season Pass: INACTIVE";
+    spStatus.dataset.active = isPurchased.toString();
+    spStatus.classList.toggle("text-green-600", isPurchased);
+    spStatus.classList.toggle("text-gray-700", !isPurchased);
   }
   if (spBtn) {
     spBtn.textContent = guiInner.value.seasonPassPurchased
@@ -393,16 +397,21 @@ function toggleSP() {
   if (!spStatus || !spBtn) return;
 
   const isActive = spStatus.dataset.active === "true";
+  const newActive = !isActive;
 
-  spStatus.dataset.active = (!isActive).toString();
-
-  spStatus.textContent = !isActive
+  spStatus.dataset.active = newActive.toString();
+  spStatus.textContent = newActive
     ? "Season Pass: ACTIVE ✓"
     : "Season Pass: INACTIVE";
-  spStatus.classList.toggle("text-green-600", !isActive);
-  spStatus.classList.toggle("text-gray-700", isActive);
+  spStatus.classList.toggle("text-green-600", newActive);
+  spStatus.classList.toggle("text-gray-700", !newActive);
 
-  spBtn.textContent = !isActive ? "Lock Season Pass" : "Unlock Season Pass";
+  spBtn.textContent = newActive ? "Lock Season Pass" : "Unlock Season Pass";
+
+  // Update the underlying data
+  if (guiInner.value) {
+    guiInner.value.seasonPassPurchased = newActive;
+  }
 }
 
 function applySpPoints() {
