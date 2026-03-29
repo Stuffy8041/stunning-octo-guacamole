@@ -84,31 +84,95 @@ async function loadGameData() {
 }
 
 function buildUiArrays() {
-  uiSurfers.value = (state.surfers || []).map((id, idx) => {
-    const idVal = id && typeof id === "object" ? id.dataTag || id.id || id : id;
-    const profile =
-      (guiInner.value && guiInner.value.surferProfiles
-        ? guiInner.value.surferProfiles
-        : []
-      ).find((p) => String(p.id) === String(idVal)) || {};
-    const name =
-      (state.charactersLinks &&
-        state.charactersLinks[idx] &&
-        state.charactersLinks[idx].name) ||
-      (id && id.name) ||
-      String(idVal);
-    const sel =
-      profile && profile.selectedSkin != null ? profile.selectedSkin : null;
-    return {
-      id: idVal,
-      name,
-      isUnlocked: !!profile.isUnlocked,
-      level: profile.level || 1,
-      highScore: profile.highScore || 0,
-      // normalize 0 (no skin) to null so selects show "none"
-      selectedSkin: sel === 0 ? null : sel
-    };
-  });
+  uiSurfers.value = [];
+  const surfersData = state.surfers || [];
+
+  // helper to normalize a character name to a key used in skins map
+  const normKey = (v) =>
+    v && String(v).toLowerCase().replace(/[^a-z0-9]/g, "") ? String(v).toLowerCase().replace(/[^a-z0-9]/g, "") : null;
+
+  if (Array.isArray(surfersData)) {
+    surfersData.forEach((item, idx) => {
+      const idVal = item && typeof item === "object" ? item.dataTag || item.id || item : item;
+      const profile =
+        (guiInner.value && guiInner.value.surferProfiles
+          ? guiInner.value.surferProfiles
+          : []
+        ).find((p) => String(p.id) === String(idVal)) || {};
+
+      const rawName = (state.charactersLinks && state.charactersLinks[idx] && state.charactersLinks[idx].name) || (item && item.name) || item && item.key || null;
+      const name = rawName || String(idVal);
+      const sel = profile && profile.selectedSkin != null ? profile.selectedSkin : null;
+
+      // build allowed skins for this surfer from state.skins if available
+      let allowedSkins = [];
+      try {
+        const k = normKey(rawName || item && item.key || "");
+        if (k && state.skins && state.skins[k]) {
+          allowedSkins = Object.keys(state.skins[k]).map((n) => ({ id: state.skins[k][n], name: n }));
+        } else if (item && Array.isArray(item.skins)) {
+          // new format: surfer item directly lists allowed skin ids
+          allowedSkins = item.skins.map((sid) => {
+            // try to find a name from the skins map
+            let foundName = String(sid);
+            if (state.skins) {
+              for (const sk in state.skins) {
+                for (const nm in state.skins[sk]) {
+                  if (state.skins[sk][nm] === sid) {
+                    foundName = nm;
+                    break;
+                  }
+                }
+                if (foundName !== String(sid)) break;
+              }
+            }
+            return { id: sid, name: foundName };
+          });
+        }
+      } catch (e) {}
+
+      uiSurfers.value.push({
+        id: idVal,
+        name,
+        isUnlocked: !!profile.isUnlocked,
+        level: profile.level || 1,
+        highScore: profile.highScore || 0,
+        // normalize 0 (no skin) to null so selects show "none"
+        selectedSkin: sel === 0 ? null : sel,
+        allowedSkins
+      });
+    });
+  } else if (surfersData && typeof surfersData === "object") {
+    // old format: object mapping key -> id
+    Object.keys(surfersData).forEach((key, idx) => {
+      const val = surfersData[key];
+      const idVal = val && typeof val === "object" ? val.dataTag || val.id || val : val;
+      const profile =
+        (guiInner.value && guiInner.value.surferProfiles
+          ? guiInner.value.surferProfiles
+          : []
+        ).find((p) => String(p.id) === String(idVal)) || {};
+      const name = (state.charactersLinks && state.charactersLinks[idx] && state.charactersLinks[idx].name) || (val && val.name) || key;
+      const sel = profile && profile.selectedSkin != null ? profile.selectedSkin : null;
+
+      let allowedSkins = [];
+      try {
+        if (state.skins && state.skins[key]) {
+          allowedSkins = Object.keys(state.skins[key]).map((n) => ({ id: state.skins[key][n], name: n }));
+        }
+      } catch (e) {}
+
+      uiSurfers.value.push({
+        id: idVal,
+        name,
+        isUnlocked: !!profile.isUnlocked,
+        level: profile.level || 1,
+        highScore: profile.highScore || 0,
+        selectedSkin: sel === 0 ? null : sel,
+        allowedSkins
+      });
+    });
+  }
 
   uiBoards.value = (state.boards || []).map((b, idx) => {
     const idVal = b && typeof b === "object" ? b.dataTag || b.id || b : b;

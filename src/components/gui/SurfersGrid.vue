@@ -40,7 +40,10 @@
             >Selected Skin
             <select v-model="s.selectedSkin">
               <option :value="null">-- none --</option>
-              <option v-for="sk in skinsList()" :key="sk.id" :value="sk.id">
+              <option
+                v-for="sk in (s.allowedSkins && s.allowedSkins.length ? s.allowedSkins : skinsList())"
+                :key="sk.id"
+                :value="sk.id">
                 {{ sk.name }} ({{ sk.id }})
               </option>
             </select>
