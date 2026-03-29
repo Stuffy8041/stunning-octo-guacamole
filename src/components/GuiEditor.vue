@@ -1,7 +1,7 @@
 <script setup>
 import { ref, reactive, onMounted, defineExpose } from "vue";
 import { fetchFilesFromLatestRelease } from "../helpers/releaseLoader";
-import { unlockAllDistricts, ensureSelectables } from "../helpers/gamedata";
+import { ensureSelectables } from "../helpers/gamedata";
 import WalletPanel from "./gui/WalletPanel.vue";
 import PlayerPanel from "./gui/PlayerPanel.vue";
 import SurfersGrid from "./gui/SurfersGrid.vue";
