@@ -1,0 +1,133 @@
+{
+  "jake": {
+    "jake_default": -56800546,
+    "jake_redblack": -960954917,
+    "jake_google": 213457242,
+    "jake_apple": -848432295,
+    "jake_yellow": -1186298654,
+    "jake_incognito": -1882385935,
+    "jake_legendary": -1087452012
+  },
+  "tricky": {
+    "tricky_default": -72574065,
+    "tricky_redblack": 1564209559,
+    "tricky_neon": -820187263,
+    "tricky_legendary": -1583432582
+  },
+  "fresh": {
+    "fresh_default": 1202249944,
+    "fresh_redblack": -1292355720,
+    "fresh_purple": 772685907,
+    "fresh_legendary": 1310049346
+  },
+  "missmaia": {
+    "missmaia_default": -1083767387,
+    "missmaia_redblack": 1154305282,
+    "missmaia_orangeblue": 775756685,
+    "missmaia_legendary": 577316046
+  },
+  "ninjaone": {
+    "ninja_one_default": 1189151463,
+    "ninja_one_gray": -672918755,
+    "ninja_one_legendary": -1253901889
+  },
+  "yutani": {
+    "yutani_default": 460586275,
+    "yutani_redblack": -258476380,
+    "yutani_legendary": 1478947346
+  },
+  "spike": {
+    "spike_default": 922134811,
+    "spike_redash": -759788578,
+    "spike_legendary": -1655542994
+  },
+  "ella": {
+    "ella_default": -989991611,
+    "ella_purple": 1508371367,
+    "ella_yellowblack": -93943772,
+    "ella_legendary": 1990369193
+  },
+  "nicky": {
+    "jay_default": -2145465549,
+    "jay_cali": -152602730,
+    "jay_legendary": -1566346654
+  },
+  "billy": {
+    "billy_default": 27667358,
+    "billy_junglecammo": -1959135014,
+    "billy_flames": 2025202852,
+    "billy_legendary": -1067636066
+  },
+  "rosalita": {
+    "rosalita_default": -1389912410,
+    "rosalita_blackburgundy": 389528075,
+    "rosalita_legendary": -1487295210
+  },
+  "tasha": {
+    "tasha_default": -503301639,
+    "tasha_green": -1312184589,
+    "tasha_redwhite": 288125499,
+    "tasha_legendary": -889435486
+  },
+  "jaewoo": {
+    "jaewoo_default": -1312276630,
+    "jaewoo_blackmagenta": -1360992679,
+    "jaewoo_greenpurple": -1505271108,
+    "jaewoo_legendary": 374299079
+  },
+  "tagbot": {
+    "tagbot_default": -1236251198,
+    "tagbot_red": 1864637985,
+    "tagbot_legendary": -209858400
+  },
+  "lilah": {
+    "lilah_default": -789829533,
+    "lilah_greencammo": -1597270950
+  },
+  "zara": {
+    "zara_default": 1093072756,
+    "zara_holozebra": 1870421642
+  },
+  "ash": {
+    "ash_default": 816980720,
+    "ash_greenorange": 1150862217
+  },
+  "jenny": {
+    "jenny_default": 362958220,
+    "jenny_colorpatches": -1287581543
+  },
+  "wei": {
+    "wei_default": -2092832313,
+    "wei_tealorange": -871825427
+  },
+  "princek": {
+    "princek_default": -1112152883,
+    "princek_red": 1781172277
+  },
+  "monique": {
+    "monique_default": -1415696609,
+    "monique_greenmustard": 1335121268
+  },
+  "noon": {
+    "noon_default": 1962475607,
+    "noon_blue": 748483822
+  },
+  "v3ctor": {
+    "v3ctor_default": 666084587,
+    "v3ctor_vr": -2129570054,
+    "v3ctor_pink": -1857764588,
+    "v3ctor_legendary": 1014902922
+  },
+  "georgie": {
+    "georgie_default": 2085271833,
+    "georgie_chicagobulls": -1648267179,
+    "georgie_bling": 1136726127,
+    "georgie_legendary": 1119532892
+  },
+  "lucy": {
+    "lucy_default": 726823100,
+    "lucy_legendary": 1076495376,
+    "lucy_gravequeen": 1973379545,
+    "lucy_purple": -122811436
+  }
+}

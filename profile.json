@@ -1,0 +1,956 @@
+{
+  "runs": 8,
+  "trialRuns": 0,
+  "campaignRuns": 0,
+  "character": 1900660162,
+  "district": 754815718,
+  "districtRecentUnlock": 0,
+  "tutorialStep": 5,
+  "stompedTimes": 25,
+  "tarpBouncedTimes": 20,
+  "bubbleBouncedTimes": 0,
+  "boardActivatedTimes": 27,
+  "onlinePlayerProfile": {
+    "name": "Alex",
+    "renameableAt": "0001-01-01T00:00:00",
+    "tag": "SJLJJHL64ANUI8",
+    "avatar": "Avatar5"
+  },
+  "surferLaddersClaimed": [],
+  "playerLadderClaimed": null,
+  "trialLadderClaimed": null,
+  "unlocksSeen": [],
+  "surferProfiles": [
+    {
+      "id": -1836944478,
+      "level": 5,
+      "isUnlocked": true,
+      "wasSeen": true,
+      "highScore": 8106,
+      "selectedSkin": 213457242
+    },
+    {
+      "id": 1900660162,
+      "level": 5,
+      "isUnlocked": true,
+      "wasSeen": true,
+      "highScore": 43371,
+      "selectedSkin": 0
+    },
+    {
+      "id": 1614866432,
+      "level": 3,
+      "isUnlocked": true,
+      "wasSeen": true,
+      "highScore": 0,
+      "selectedSkin": 0
+    }
+  ],
+  "surferSkinProfiles": [
+    {
+      "id": -56800546,
+      "isUnlocked": true,
+      "wasSeen": true
+    },
+    {
+      "id": 213457242,
+      "isUnlocked": true,
+      "wasSeen": true
+    },
+    {
+      "id": -72574065,
+      "isUnlocked": true,
+      "wasSeen": false
+    },
+    {
+      "id": -1083767387,
+      "isUnlocked": true,
+      "wasSeen": false
+    }
+  ],
+  "boardProfiles": [
+    {
+      "id": 857306595,
+      "level": 1,
+      "isUnlocked": true,
+      "wasSeen": true
+    },
+    {
+      "id": 821107692,
+      "level": 2,
+      "isUnlocked": true,
+      "wasSeen": true
+    }
+  ],
+  "districtProfiles": [
+    {
+      "id": 754815718,
+      "isUnlocked": true,
+      "wasSeen": true
+    }
+  ],
+  "secretStarProfiles": [
+    {
+      "id": 737186562,
+      "isUnlocked": false
+    },
+    {
+      "id": -586907066,
+      "isUnlocked": false
+    },
+    {
+      "id": 1294014696,
+      "isUnlocked": false
+    }
+  ],
+  "leaderboardProfiles": [
+    {
+      "id": "top_run_weekly_v2",
+      "resetTime": "2026-03-30T09:00:00Z",
+      "surferDataTag": 1900660162,
+      "bestScore": 43371,
+      "previousCycleRewardClaimed": true
+    }
+  ],
+  "timers": {
+    "93888531": {
+      "identifier": 93888531,
+      "serverTimerAsTicks": 639103354767420000,
+      "cooldownAsTicks": 1225232590000
+    },
+    "359777169": {
+      "identifier": 359777169,
+      "serverTimerAsTicks": 639103834041400000,
+      "cooldownAsTicks": 745958600000
+    },
+    "1540954205": {
+      "identifier": 1540954205,
+      "serverTimerAsTicks": 639103834104910000,
+      "cooldownAsTicks": 745895090000
+    },
+    "1544756889": {
+      "identifier": 1544756889,
+      "serverTimerAsTicks": 639103834041400000,
+      "cooldownAsTicks": 745958600000
+    },
+    "1724371325": {
+      "identifier": 1724371325,
+      "serverTimerAsTicks": 639103856304750000,
+      "cooldownAsTicks": 723695250000
+    },
+    "1736847767": {
+      "identifier": 1736847767,
+      "serverTimerAsTicks": 639102353092140000,
+      "cooldownAsTicks": 2226907860000
+    },
+    "1777447630": {
+      "identifier": 1777447630,
+      "serverTimerAsTicks": 639103354767420000,
+      "cooldownAsTicks": 1225232580000
+    },
+    "-929345989": {
+      "identifier": -929345989,
+      "serverTimerAsTicks": 639103354767400000,
+      "cooldownAsTicks": 1225232610000
+    },
+    "-1319167260": {
+      "identifier": -1319167260,
+      "serverTimerAsTicks": 639103834737900000,
+      "cooldownAsTicks": 745262100000
+    },
+    "-1389244755": {
+      "identifier": -1389244755,
+      "serverTimerAsTicks": 639103354767420000,
+      "cooldownAsTicks": 1225232580000
+    }
+  },
+  "incrementalPurchases": {},
+  "purchaseHistory": {
+    "shop.box.super.free": {
+      "PurchaseCount": 1,
+      "PurchaseDates": ["2026-03-29T12:38:41.3370000Z"]
+    },
+    "shop.box.super": {
+      "PurchaseCount": 1,
+      "PurchaseDates": ["2026-03-29T12:38:50.2090000Z"]
+    },
+    "daily_deal_1": {
+      "PurchaseCount": 1,
+      "PurchaseDates": ["2026-03-29T12:45:11.6240000Z"]
+    },
+    "shop.currency.keypackfree": {
+      "PurchaseCount": 1,
+      "PurchaseDates": ["2026-03-29T12:53:50.4740000Z"]
+    },
+    "runoffer.revivepack.001": {
+      "PurchaseCount": 2,
+      "PurchaseDates": [
+        "2026-03-29T12:58:12.3840000Z",
+        "2026-03-29T13:14:46.6860000Z"
+      ]
+    }
+  },
+  "counters": [
+    {
+      "CounterType": "LastUnlockedTierCounter",
+      "Id": "DataTag(-1836944478)",
+      "Count": 10
+    },
+    {
+      "CounterType": "DailyDealCounter",
+      "Id": "daily_deal",
+      "Count": 0
+    },
+    {
+      "CounterType": "AdsWatchedCounter",
+      "Id": "dailyAdsWatched",
+      "Count": 1
+    },
+    {
+      "CounterType": "LastUnlockedTierCounter",
+      "Id": "DataTag(1900660162)",
+      "Count": 10
+    },
+    {
+      "CounterType": "LastUnlockedTierCounter",
+      "Id": "DataTag(1614866432)",
+      "Count": 10
+    }
+  ],
+  "dailyDeal": {
+    "dailyDeals": [
+      {
+        "slotId": "daily_deal_1",
+        "slotSeed": 47,
+        "itemDatatag": 449284577,
+        "amount": 6
+      },
+      {
+        "slotId": "daily_deal_2",
+        "slotSeed": 2,
+        "itemDatatag": 1669706535,
+        "amount": 1
+      },
+      {
+        "slotId": "daily_deal_3",
+        "slotSeed": 79,
+        "itemDatatag": 449284577,
+        "amount": 19
+      },
+      {
+        "slotId": "daily_deal_4",
+        "slotSeed": 28,
+        "itemDatatag": 449284577,
+        "amount": 14
+      },
+      {
+        "slotId": "daily_deal_5",
+        "slotSeed": 87,
+        "itemDatatag": 449284577,
+        "amount": 8
+      },
+      {
+        "slotId": "daily_deal_6",
+        "slotSeed": 56,
+        "itemDatatag": 449284577,
+        "amount": 13
+      }
+    ]
+  },
+  "consent": {
+    "dataProcessingState": "None"
+  },
+  "wallet": [
+    {
+      "dataTag": -1085419483,
+      "count": 125
+    },
+    {
+      "dataTag": 1669706535,
+      "count": 17
+    },
+    {
+      "dataTag": -1878560402,
+      "count": 26
+    },
+    {
+      "dataTag": -1509662453,
+      "count": 37
+    },
+    {
+      "dataTag": -633437229,
+      "count": 4200
+    },
+    {
+      "dataTag": 722065917,
+      "count": 49
+    },
+    {
+      "dataTag": 449284577,
+      "count": 2147483647
+    },
+    {
+      "dataTag": 543173782,
+      "count": 69
+    },
+    {
+      "dataTag": -116637823,
+      "count": 0
+    },
+    {
+      "dataTag": -402320829,
+      "count": 7
+    },
+    {
+      "dataTag": 596132505,
+      "count": 11
+    }
+  ],
+  "analytics": {
+    "homeScreenShownOnce": false,
+    "anyRewardClaimed": false,
+    "surferDetailsSeen": false,
+    "anySurferUpgraded": false
+  },
+  "level": 2147483646,
+  "xp": 10,
+  "globalScoreRunMultiplier": 0,
+  "additionalMissionSlotsAmount": 5,
+  "dailyMissions": {},
+  "seasonMissions": {},
+  "dailyMissionHistory": [
+    -435211901, 407861536, 1523751882, -2142414666, -396569446
+  ],
+  "dailyMissionLastReset": "0001-01-01T00:00:00",
+  "dailyMissionLastResetSeen": "0001-01-01T00:00:00",
+  "dailyMissionResetTimeStamp": 0,
+  "mainlineMissions": {},
+  "currentMainlineMissionSetIndex": 1,
+  "isCurrentMainlineMissionSetClaimed": false,
+  "hasCompletedAllMainlineMissionSets": false,
+  "selectedBoard": 821107692,
+  "hasRefreshedDailyMissionsWithAd": false,
+  "trials": {
+    "238865354.3/29/2026 9:00:00 AM": {
+      "Id": "238865354.3/29/2026 9:00:00 AM",
+      "TypeTag": 238865354,
+      "Stages": null,
+      "CurrentStageId": null,
+      "SchedulerId": "schedulers.trials.hardcore1",
+      "StageId": 0,
+      "WasSeen": false,
+      "FallBackTrialUsed": false,
+      "StartedRefreshTicketsTimer": false,
+      "Surfers": [
+        {
+          "Id": 2129411796,
+          "PlayCount": 0
+        },
+        {
+          "Id": -1836944478,
+          "PlayCount": 0
+        },
+        {
+          "Id": -1733051898,
+          "PlayCount": 0
+        }
+      ]
+    },
+    "-1959912201.3/27/2026 9:00:00 AM": {
+      "Id": "-1959912201.3/27/2026 9:00:00 AM",
+      "TypeTag": -1959912201,
+      "Stages": null,
+      "CurrentStageId": null,
+      "SchedulerId": "schedulers.biweekly2.friday3d",
+      "StageId": 0,
+      "WasSeen": false,
+      "FallBackTrialUsed": false,
+      "StartedRefreshTicketsTimer": false,
+      "Surfers": [
+        {
+          "Id": 1614866432,
+          "PlayCount": 0
+        },
+        {
+          "Id": -1836944478,
+          "PlayCount": 0
+        },
+        {
+          "Id": -1505268145,
+          "PlayCount": 0
+        }
+      ]
+    },
+    "237932842.3/29/2026 9:00:00 AM": {
+      "Id": "237932842.3/29/2026 9:00:00 AM",
+      "TypeTag": 237932842,
+      "Stages": null,
+      "CurrentStageId": null,
+      "SchedulerId": "schedulers.trials.bridge1",
+      "StageId": 0,
+      "WasSeen": false,
+      "FallBackTrialUsed": false,
+      "StartedRefreshTicketsTimer": false,
+      "Surfers": [
+        {
+          "Id": 1900660162,
+          "PlayCount": 0
+        },
+        {
+          "Id": -1836944478,
+          "PlayCount": 0
+        },
+        {
+          "Id": 299562833,
+          "PlayCount": 0
+        }
+      ]
+    }
+  },
+  "trialStages": [],
+  "introductionTrialStartDate": "0001-01-01T00:00:00",
+  "hasSeenTrialsInfo": false,
+  "dailyAdRewards": [
+    {
+      "RewardType": -633437229,
+      "RewardValue": 950,
+      "Claimed": false
+    },
+    {
+      "RewardType": -633437229,
+      "RewardValue": 950,
+      "Claimed": false
+    },
+    {
+      "RewardType": -633437229,
+      "RewardValue": 950,
+      "Claimed": false
+    },
+    {
+      "RewardType": 449284577,
+      "RewardValue": 9,
+      "Claimed": false
+    },
+    {
+      "RewardType": 449284577,
+      "RewardValue": 11,
+      "Claimed": true
+    },
+    {
+      "RewardType": 449284577,
+      "RewardValue": 8,
+      "Claimed": false
+    },
+    {
+      "RewardType": 1669706535,
+      "RewardValue": 1,
+      "Claimed": false
+    },
+    {
+      "RewardType": -1878560402,
+      "RewardValue": 1,
+      "Claimed": false
+    },
+    {
+      "RewardType": -1509662453,
+      "RewardValue": 1,
+      "Claimed": false
+    }
+  ],
+  "hasSeenDailyAdRewards": false,
+  "seasonPassId": "c7f55cc9-e455-4301-9340-559ecc94c124",
+  "seasonPassPoints": 0,
+  "seasonPassPurchased": false,
+  "seasonPassClaimedRewards": [],
+  "hasSeenPremiumPassActivation": false,
+  "hasSeenNewSeason": false,
+  "seasonPassClaimedOverflowRewardsAmount": 0,
+  "cloudsave": {
+    "askedToLinkAccount": false
+  },
+  "interstitialHistory": {
+    "HomeScreenInterstitial": {
+      "Count": 3,
+      "LastWatchedDate": "2026-03-29T13:16:08.1210000Z",
+      "CoolDownTimerId": 810068009
+    }
+  },
+  "trialCompleteMissions": {},
+  "incompleteRun": {
+    "time": 0,
+    "score": 0,
+    "coins": 0,
+    "keys": 0,
+    "xp": 0,
+    "level": 0
+  },
+  "flags": {
+    "CloudSave_AskedToLinkAccount": true,
+    "FtueDailyScoreGoalEncountered": true,
+    "Analytics_HomeScreenSeen": true,
+    "playerladder": true,
+    "surfers": true,
+    "Analytics_SurferDetailsSeen": true,
+    "Trials_InfoSeen": true,
+    "onlineplayerprofile": true,
+    "leaderboard": true,
+    "characterladder": true,
+    "campaign": true,
+    "shop": true,
+    "dailyadrewards": true,
+    "mainlinemissions": true,
+    "trials": true,
+    "scheduledcampaign": true,
+    "showseasonpassteaser": true,
+    "HasSeenDailyAdRewards": true,
+    "MainlineMissions_HasBeenSeen": true,
+    "HasSeenCityTourScreen": true,
+    "CampaignInfoViewSeen": true,
+    "unlock_animation_district1": true,
+    "Crew_PanelUnlockSeen": true,
+    "Crew_SurferDetailIntroSeen": true,
+    "MainlineMissions_IsCurrentSetClaimed": false
+  },
+  "claimedRewards": [
+    {
+      "Id": "bc99b2ef-1feb-41dd-b82c-1ad1d1a6d506",
+      "Origin": "PlayerLadder",
+      "Count": 1
+    },
+    {
+      "Id": "DataTag(518503815)",
+      "Origin": "DailyMission",
+      "Count": 1
+    },
+    {
+      "Id": "DataTag(1404891611)",
+      "Origin": "DailyMission",
+      "Count": 1
+    },
+    {
+      "Id": "9ea40001-6574-4267-a55c-6a39c1053a0c",
+      "Origin": "PlayerLadder",
+      "Count": 1
+    },
+    {
+      "Id": "02dd5d8b-ed75-40a7-9fb7-7cc0a241fb91",
+      "Origin": "PlayerLadder",
+      "Count": 1
+    },
+    {
+      "Id": "DataTag(-1836944478)_671418c6-2580-4b3d-8fe5-a36f0ef756cc",
+      "Origin": "SurferLadder",
+      "Count": 1
+    },
+    {
+      "Id": "DataTag(-1289281356)",
+      "Origin": "MainlineMission",
+      "Count": 1
+    },
+    {
+      "Id": "DataTag(-1097053101)",
+      "Origin": "MainlineMission",
+      "Count": 1
+    },
+    {
+      "Id": "2530cd43-0c34-431a-9618-fcf641e77dfe",
+      "Origin": "PlayerLadder",
+      "Count": 1
+    }
+  ],
+  "missionProgresses": [
+    {
+      "id": -1048301224,
+      "progress": 100,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 1149701091,
+      "progress": 2,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": -83190620,
+      "progress": 5000,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": -1344576354,
+      "progress": 5,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 133030444,
+      "progress": 100,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 1739487940,
+      "progress": 19,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": -818023335,
+      "progress": 5,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 1836095912,
+      "progress": 5,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 1347182739,
+      "progress": 0,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 1724951749,
+      "progress": 27,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": -2072915534,
+      "progress": 3821,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 41756756,
+      "progress": 3,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 1554727828,
+      "progress": 6470,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774738676,
+      "featureType": "Quest"
+    },
+    {
+      "id": 2097596224,
+      "progress": 90792,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774738676,
+      "featureType": "Quest"
+    },
+    {
+      "id": -546746722,
+      "progress": 0,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774738676,
+      "featureType": "Quest"
+    },
+    {
+      "id": -1571357937,
+      "progress": 10,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774738676,
+      "featureType": "Quest"
+    },
+    {
+      "id": -1648185782,
+      "progress": 273,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774786608,
+      "featureType": "Daily"
+    },
+    {
+      "id": -886886971,
+      "progress": 3,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774786608,
+      "featureType": "Daily"
+    },
+    {
+      "id": -1157334211,
+      "progress": 5,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774786608,
+      "featureType": "Daily"
+    },
+    {
+      "id": 518503815,
+      "progress": 5,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774786608,
+      "featureType": "Daily"
+    },
+    {
+      "id": 1404891611,
+      "progress": 5000,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774786608,
+      "featureType": "Daily"
+    },
+    {
+      "id": -1020074349,
+      "progress": 0,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774786620,
+      "featureType": "Trial"
+    },
+    {
+      "id": -1140436546,
+      "progress": 0,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774786620,
+      "featureType": "Trial"
+    },
+    {
+      "id": -965046473,
+      "progress": 0,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774786620,
+      "featureType": "Trial"
+    },
+    {
+      "id": -857856556,
+      "progress": 0,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774786620,
+      "featureType": "Trial"
+    },
+    {
+      "id": -1745035175,
+      "progress": 0,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774786620,
+      "featureType": "Trial"
+    },
+    {
+      "id": -1097053101,
+      "progress": 2,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774788364,
+      "featureType": "Mainline"
+    },
+    {
+      "id": 700128901,
+      "progress": 0,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774788364,
+      "featureType": "Mainline"
+    },
+    {
+      "id": -1289281356,
+      "progress": 2,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774788364,
+      "featureType": "Mainline"
+    }
+  ],
+  "timestamps": [
+    {
+      "Id": "DailyMissionLastResetTimeStamp",
+      "Ticks": 1774786608
+    },
+    {
+      "Id": "DailyMissionNextResetDateTime",
+      "Ticks": 639104580000000000
+    },
+    {
+      "Id": "sch-campaign-weekly-campaign-speedpad-1",
+      "Ticks": 639102351611840000
+    },
+    {
+      "Id": "Trials_IntroductionStartDate",
+      "Ticks": 639102353092070000
+    },
+    {
+      "Id": "DailyMissionLastResetSeen",
+      "Ticks": 639104580000000000
+    },
+    {
+      "Id": "sch-campaign-weekly-campaign-speedpad-2",
+      "Ticks": 639103834104000000
+    }
+  ],
+  "crew": [
+    {
+      "SurferId": -1836944478
+    },
+    {
+      "SurferId": 1614866432
+    }
+  ],
+  "goals": [],
+  "quest": [
+    {
+      "QuestID": "city-skating",
+      "AnalyticID": "city-skating_9cd152ea-f38d-47da-b46e-52f6274a4ffa",
+      "Amount": 6470,
+      "TimerID": -929345989,
+      "ActiveStepIndex": 0,
+      "SavableItems": [
+        {
+          "Kind": "DataTag",
+          "Tag": -1836944478
+        },
+        {
+          "Kind": "DataTag",
+          "Tag": 1900660162
+        },
+        {
+          "Kind": "DataTag",
+          "Tag": 299562833
+        }
+      ],
+      "PendingProgress": 0
+    },
+    {
+      "QuestID": "weekend-score-chase",
+      "AnalyticID": "weekend-score-chase_e478a1f5-233f-41c7-9efd-258d7310dd62",
+      "Amount": 90792,
+      "TimerID": 93888531,
+      "ActiveStepIndex": 0,
+      "SavableItems": [
+        {
+          "Kind": "DataTag",
+          "Tag": -1836944478
+        },
+        {
+          "Kind": "DataTag",
+          "Tag": 1900660162
+        },
+        {
+          "Kind": "DataTag",
+          "Tag": 1887684367
+        }
+      ],
+      "PendingProgress": 0
+    },
+    {
+      "QuestID": "theme-park-days",
+      "AnalyticID": "theme-park-days_b5d9f386-04dd-4f51-9702-4a24d98f55a3",
+      "Amount": 0,
+      "TimerID": 1777447630,
+      "ActiveStepIndex": 0,
+      "SavableItems": [],
+      "PendingProgress": 0
+    },
+    {
+      "QuestID": "soda-time",
+      "AnalyticID": "soda-time_dad587f9-1b11-4bad-9553-5c77747f3efc",
+      "Amount": 10,
+      "TimerID": -1389244755,
+      "ActiveStepIndex": 0,
+      "SavableItems": [],
+      "PendingProgress": 0
+    }
+  ],
+  "questTriggered": [
+    {
+      "QuestID": "city-skating",
+      "TimeTriggered": "2026-03-28T22:57:56.7440000Z"
+    },
+    {
+      "QuestID": "weekend-score-chase",
+      "TimeTriggered": "2026-03-28T22:57:56.7450000Z"
+    },
+    {
+      "QuestID": "theme-park-days",
+      "TimeTriggered": "2026-03-28T22:57:56.7460000Z"
+    },
+    {
+      "QuestID": "soda-time",
+      "TimeTriggered": "2026-03-28T22:57:56.7470000Z"
+    }
+  ],
+  "activeScheduledCampaignProfile": {
+    "activeScheduledCampaignId": "weekly-campaign-speedpad-2",
+    "playableSurfers": [-1505268145, 1663244716, -1836944478]
+  },
+  "dailyScoreGoals": {
+    "drawnLadderId": "6373cb2d-3796-4631-b289-168b853faaf6",
+    "lastScheduleCycle": 194,
+    "accumulatedScore": 90792
+  },
+  "gameVersion": "2.1.0",
+  "rewardAds": {
+    "rewardAdsSeenToday": 1,
+    "rewardAdsResetDay": "2026-03-29T12:44:40.0030000Z"
+  },
+  "lifetimeReviveCount": 14
+}

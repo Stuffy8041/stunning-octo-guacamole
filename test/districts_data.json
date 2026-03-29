@@ -1,0 +1,24 @@
+{
+  "districts": [
+    {
+      "dataTag": 754815718,
+      "ladderId": "brooklyn"
+    },
+    {
+      "dataTag": -48406815,
+      "ladderId": "harbor"
+    },
+    {
+      "dataTag": 1011666857,
+      "ladderId": "commercial"
+    },
+    {
+      "dataTag": -846857,
+      "ladderId": "park"
+    },
+    {
+      "dataTag": -530046136,
+      "ladderId": "sewer"
+    }
+  ]
+}

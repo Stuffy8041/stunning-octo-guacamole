@@ -1,0 +1,132 @@
+[
+  {
+    "number": 1,
+    "name": "Electric Blue",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/6/63/ElectricBlue1.png"
+  },
+  {
+    "number": 2,
+    "name": "Trasher",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/2/23/Trasher1.png"
+  },
+  {
+    "number": 3,
+    "name": "Naughty & Nice",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/5/53/Naughty%26Nice1.png"
+  },
+  {
+    "number": 4,
+    "name": "The Grandmaster",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/e/e7/TheGrandmaster1.png"
+  },
+  {
+    "number": 5,
+    "name": "Eye of the Viper",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/9/99/EyeoftheViper1.png"
+  },
+  {
+    "number": 6,
+    "name": "Day of the Shred",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/0/05/DayoftheShred1.png"
+  },
+  {
+    "number": 7,
+    "name": "Zephyr Cruiser",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/b/ba/ZephyrCruiser1.png"
+  },
+  {
+    "number": 8,
+    "name": "Wakizashi",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/e/e7/Wakizashi1.png"
+  },
+  {
+    "number": 9,
+    "name": "CY-Board",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/9/91/CYBoard1.png"
+  },
+  {
+    "number": 10,
+    "name": "Dog City",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/9/9f/DogCity1.png"
+  },
+  {
+    "number": 11,
+    "name": "Spaced Invader",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/3/3e/SpacedInvader1.png"
+  },
+  {
+    "number": 12,
+    "name": "Vaunted",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/2/26/Vaunted1.png"
+  },
+  {
+    "number": 13,
+    "name": "Sweet Street",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/c/cd/SweetStreetTASHA.png"
+  },
+  {
+    "number": 14,
+    "name": "Aquiline",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/7/71/Aquiline1.png"
+  },
+  {
+    "number": 15,
+    "name": "Pouncer",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/2/29/Pouncer1.png"
+  },
+  {
+    "number": 16,
+    "name": "G-Tiger",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/7/7f/GTiger1.png"
+  },
+  {
+    "number": 17,
+    "name": "Home Runner",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/7/71/HomeRunner1.png"
+  },
+  {
+    "number": 18,
+    "name": "Honeycomb",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/f/f1/Honeycomb1.png"
+  },
+  {
+    "number": 19,
+    "name": "Peace of Grind",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/a/ac/Peaceofgrind1.png"
+  },
+  {
+    "number": 20,
+    "name": "Globetrotter",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/d/d3/Globetrotter1.png"
+  },
+  {
+    "number": 21,
+    "name": "Djinn's Fortune",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/1/18/DjinnsFortune1.png"
+  },
+  {
+    "number": 22,
+    "name": "Flame Tamer",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/9/90/FlameTamer1.png"
+  },
+  {
+    "number": 23,
+    "name": "Knockout",
+    "img_url": null
+  },
+  {
+    "number": 24,
+    "name": "Cobweb",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/a/ad/Cobweb1.png"
+  },
+  {
+    "number": 25,
+    "name": "Sub Surf Classic",
+    "img_url": "https://static.wikia.nocookie.net/subway-surfer-city/images/e/e7/Subsurfclassic1.png"
+  },
+  {
+    "number": 26,
+    "name": "H4x0r",
+    "img_url": "/wiki/File:H4x0r.png"
+  }
+]

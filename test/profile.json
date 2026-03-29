@@ -1,0 +1,536 @@
+{
+  "runs": 4,
+  "trialRuns": 0,
+  "campaignRuns": 0,
+  "character": -1836944478,
+  "district": 754815718,
+  "districtRecentUnlock": 0,
+  "tutorialStep": 5,
+  "stompedTimes": 9,
+  "tarpBouncedTimes": 7,
+  "bubbleBouncedTimes": 0,
+  "boardActivatedTimes": 7,
+  "onlinePlayerProfile": {
+    "name": "StellarRatRatRa",
+    "renameableAt": "2026-03-14T15:07:01.0991300Z",
+    "tag": "QMEW37J4NCJG8V",
+    "avatar": "Avatar5"
+  },
+  "surferLaddersClaimed": [],
+  "playerLadderClaimed": null,
+  "trialLadderClaimed": null,
+  "unlocksSeen": [],
+  "surferProfiles": [
+    {
+      "id": -1836944478,
+      "level": 2,
+      "isUnlocked": true,
+      "wasSeen": true,
+      "highScore": 3694,
+      "selectedSkin": 0
+    }
+  ],
+  "surferSkinProfiles": [
+    {
+      "id": -56800546,
+      "isUnlocked": true,
+      "wasSeen": true
+    },
+    {
+      "id": 213457242,
+      "isUnlocked": true,
+      "wasSeen": false
+    }
+  ],
+  "boardProfiles": [
+    {
+      "id": 857306595,
+      "level": 1,
+      "isUnlocked": true,
+      "wasSeen": true
+    }
+  ],
+  "districtProfiles": [
+    {
+      "id": 754815718,
+      "isUnlocked": true,
+      "wasSeen": true
+    }
+  ],
+  "secretStarProfiles": [],
+  "leaderboardProfiles": [],
+  "timers": {
+    "469068842": {
+      "identifier": 469068842,
+      "serverTimerAsTicks": 639102353092110000,
+      "cooldownAsTicks": 498907890000
+    },
+    "1621874406": {
+      "identifier": 1621874406,
+      "serverTimerAsTicks": 639102353092190000,
+      "cooldownAsTicks": 498907810000
+    },
+    "1711271728": {
+      "identifier": 1711271728,
+      "serverTimerAsTicks": 639102353092090000,
+      "cooldownAsTicks": 864307910000
+    },
+    "1736847767": {
+      "identifier": 1736847767,
+      "serverTimerAsTicks": 639102353092140000,
+      "cooldownAsTicks": 2226907860000
+    },
+    "-1319167260": {
+      "identifier": -1319167260,
+      "serverTimerAsTicks": 639102215882480000,
+      "cooldownAsTicks": 636117520000
+    }
+  },
+  "incrementalPurchases": {},
+  "purchaseHistory": {},
+  "counters": [
+    {
+      "CounterType": "LastUnlockedTierCounter",
+      "Id": "DataTag(-1836944478)",
+      "Count": 10
+    }
+  ],
+  "dailyDeal": {
+    "dailyDeals": []
+  },
+  "consent": {
+    "dataProcessingState": "None"
+  },
+  "wallet": [
+    {
+      "dataTag": -1085419483,
+      "count": 5
+    },
+    {
+      "dataTag": 1669706535,
+      "count": 2
+    },
+    {
+      "dataTag": -1878560402,
+      "count": 0
+    },
+    {
+      "dataTag": -1509662453,
+      "count": 0
+    },
+    {
+      "dataTag": -633437229,
+      "count": 852
+    },
+    {
+      "dataTag": 722065917,
+      "count": 20
+    },
+    {
+      "dataTag": 449284577,
+      "count": 7
+    },
+    {
+      "dataTag": 543173782,
+      "count": 0
+    }
+  ],
+  "analytics": {
+    "homeScreenShownOnce": false,
+    "anyRewardClaimed": false,
+    "surferDetailsSeen": false,
+    "anySurferUpgraded": false
+  },
+  "level": 49,
+  "xp": 230000,
+  "globalScoreRunMultiplier": 0,
+  "additionalMissionSlotsAmount": 0,
+  "dailyMissions": {},
+  "seasonMissions": {},
+  "dailyMissionHistory": [],
+  "dailyMissionLastReset": "0001-01-01T00:00:00",
+  "dailyMissionLastResetSeen": "0001-01-01T00:00:00",
+  "dailyMissionResetTimeStamp": 0,
+  "mainlineMissions": {},
+  "currentMainlineMissionSetIndex": 0,
+  "isCurrentMainlineMissionSetClaimed": false,
+  "hasCompletedAllMainlineMissionSets": false,
+  "selectedBoard": 857306595,
+  "hasRefreshedDailyMissionsWithAd": false,
+  "trials": {
+    "1627064688.27/03/2026 07:08 PM": {
+      "Id": "1627064688.27/03/2026 07:08 PM",
+      "TypeTag": 1627064688,
+      "Stages": null,
+      "CurrentStageId": null,
+      "SchedulerId": "",
+      "StageId": 0,
+      "WasSeen": false,
+      "FallBackTrialUsed": false,
+      "StartedRefreshTicketsTimer": false,
+      "Surfers": [
+        {
+          "Id": -1836944478,
+          "PlayCount": 0
+        },
+        {
+          "Id": 299562833,
+          "PlayCount": 0
+        }
+      ]
+    },
+    "-119245970.3/27/2026 9:00:00 AM": {
+      "Id": "-119245970.3/27/2026 9:00:00 AM",
+      "TypeTag": -119245970,
+      "Stages": null,
+      "CurrentStageId": null,
+      "SchedulerId": "schedulers.trials.bubble1",
+      "StageId": 0,
+      "WasSeen": false,
+      "FallBackTrialUsed": false,
+      "StartedRefreshTicketsTimer": false,
+      "Surfers": [
+        {
+          "Id": -1836944478,
+          "PlayCount": 0
+        },
+        {
+          "Id": 1887684367,
+          "PlayCount": 0
+        }
+      ]
+    },
+    "-1959912201.3/27/2026 9:00:00 AM": {
+      "Id": "-1959912201.3/27/2026 9:00:00 AM",
+      "TypeTag": -1959912201,
+      "Stages": null,
+      "CurrentStageId": null,
+      "SchedulerId": "schedulers.biweekly2.friday3d",
+      "StageId": 0,
+      "WasSeen": false,
+      "FallBackTrialUsed": false,
+      "StartedRefreshTicketsTimer": false,
+      "Surfers": [
+        {
+          "Id": 1614866432,
+          "PlayCount": 0
+        },
+        {
+          "Id": -1836944478,
+          "PlayCount": 0
+        },
+        {
+          "Id": -1505268145,
+          "PlayCount": 0
+        }
+      ]
+    },
+    "-1013799314.3/27/2026 9:00:00 AM": {
+      "Id": "-1013799314.3/27/2026 9:00:00 AM",
+      "TypeTag": -1013799314,
+      "Stages": null,
+      "CurrentStageId": null,
+      "SchedulerId": "schedulers.trials.commercial1",
+      "StageId": 0,
+      "WasSeen": false,
+      "FallBackTrialUsed": false,
+      "StartedRefreshTicketsTimer": false,
+      "Surfers": [
+        {
+          "Id": 2129411796,
+          "PlayCount": 0
+        },
+        {
+          "Id": -1836944478,
+          "PlayCount": 0
+        },
+        {
+          "Id": 1887684367,
+          "PlayCount": 0
+        }
+      ]
+    }
+  },
+  "trialStages": [],
+  "introductionTrialStartDate": "0001-01-01T00:00:00",
+  "hasSeenTrialsInfo": false,
+  "dailyAdRewards": [
+    {
+      "RewardType": -633437229,
+      "RewardValue": 850,
+      "Claimed": false
+    },
+    {
+      "RewardType": -633437229,
+      "RewardValue": 800,
+      "Claimed": false
+    },
+    {
+      "RewardType": -633437229,
+      "RewardValue": 900,
+      "Claimed": false
+    },
+    {
+      "RewardType": 449284577,
+      "RewardValue": 8,
+      "Claimed": false
+    },
+    {
+      "RewardType": 449284577,
+      "RewardValue": 9,
+      "Claimed": false
+    },
+    {
+      "RewardType": 449284577,
+      "RewardValue": 8,
+      "Claimed": false
+    },
+    {
+      "RewardType": 1669706535,
+      "RewardValue": 1,
+      "Claimed": false
+    },
+    {
+      "RewardType": -1878560402,
+      "RewardValue": 1,
+      "Claimed": false
+    },
+    {
+      "RewardType": -1878560402,
+      "RewardValue": 1,
+      "Claimed": false
+    }
+  ],
+  "hasSeenDailyAdRewards": false,
+  "seasonPassId": "c7f55cc9-e455-4301-9340-559ecc94c124",
+  "seasonPassPoints": 0,
+  "seasonPassPurchased": false,
+  "seasonPassClaimedRewards": [],
+  "hasSeenPremiumPassActivation": false,
+  "hasSeenNewSeason": false,
+  "seasonPassClaimedOverflowRewardsAmount": 0,
+  "cloudsave": {
+    "askedToLinkAccount": false
+  },
+  "interstitialHistory": {},
+  "trialCompleteMissions": {},
+  "incompleteRun": {
+    "time": 0,
+    "score": 0,
+    "coins": 0,
+    "keys": 0,
+    "xp": 0,
+    "level": 0
+  },
+  "flags": {
+    "CloudSave_AskedToLinkAccount": true,
+    "FtueDailyScoreGoalEncountered": true,
+    "Analytics_HomeScreenSeen": true,
+    "playerladder": true,
+    "surfers": true,
+    "Analytics_SurferDetailsSeen": true,
+    "ScheduledCampaign_ActiveCampaignInfoReady": true,
+    "onlineplayerprofile": true,
+    "leaderboard": true,
+    "characterladder": true,
+    "campaign": true,
+    "shop": true,
+    "dailyadrewards": true,
+    "mainlinemissions": true,
+    "trials": true,
+    "scheduledcampaign": true,
+    "showseasonpassteaser": true,
+    "HasSeenDailyAdRewards": true,
+    "MainlineMissions_HasBeenSeen": true
+  },
+  "claimedRewards": [
+    {
+      "Id": "f6589d6f-4333-4cf4-898f-f8a25434d180",
+      "Origin": "DailyScoreGoals",
+      "Count": 1
+    },
+    {
+      "Id": "bc99b2ef-1feb-41dd-b82c-1ad1d1a6d506",
+      "Origin": "PlayerLadder",
+      "Count": 1
+    }
+  ],
+  "missionProgresses": [
+    {
+      "id": -1048301224,
+      "progress": 100,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 1149701091,
+      "progress": 1,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": -83190620,
+      "progress": 5000,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": -1344576354,
+      "progress": 5,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 133030444,
+      "progress": 100,
+      "isComplete": true,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 1739487940,
+      "progress": 3,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": -818023335,
+      "progress": 1,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 1836095912,
+      "progress": 0,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 1347182739,
+      "progress": 0,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 1724951749,
+      "progress": 7,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": -2072915534,
+      "progress": 852,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 41756756,
+      "progress": 0,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774624780,
+      "featureType": "Achievement"
+    },
+    {
+      "id": 1637052321,
+      "progress": 0,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774638393,
+      "featureType": "Mainline"
+    },
+    {
+      "id": -1356709730,
+      "progress": 0,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774638393,
+      "featureType": "Mainline"
+    },
+    {
+      "id": -1915441747,
+      "progress": 0,
+      "isComplete": false,
+      "isClaimed": false,
+      "creationUnixTimestamp": 0,
+      "creationUnixTimestampSeconds": 1774638393,
+      "featureType": "Mainline"
+    }
+  ],
+  "timestamps": [
+    {
+      "Id": "DailyMissionLastResetTimeStamp",
+      "Ticks": 1774637584
+    },
+    {
+      "Id": "DailyMissionNextResetDateTime",
+      "Ticks": 639102852000000000
+    },
+    {
+      "Id": "sch-campaign-weekly-campaign-speedpad-1",
+      "Ticks": 639102351611840000
+    },
+    {
+      "Id": "Trials_IntroductionStartDate",
+      "Ticks": 639102353092070000
+    }
+  ],
+  "crew": [],
+  "goals": [],
+  "quest": [],
+  "questTriggered": [],
+  "activeScheduledCampaignProfile": {
+    "activeScheduledCampaignId": "weekly-campaign-speedpad-1",
+    "playableSurfers": [
+      1887684367,
+      2129411796,
+      -1836944478
+    ]
+  },
+  "dailyScoreGoals": {
+    "drawnLadderId": "299a0bee-acee-46f6-8a1d-758dfe9e5531",
+    "lastScheduleCycle": 192,
+    "accumulatedScore": 7799
+  },
+  "gameVersion": "2.1.0",
+  "rewardAds": {
+    "rewardAdsSeenToday": 0,
+    "rewardAdsResetDay": "0001-01-01T00:00:00"
+  },
+  "lifetimeReviveCount": 3
+}
