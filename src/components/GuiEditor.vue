@@ -470,7 +470,7 @@ function applySpPoints() {
     <PlayerPanel
       :state="state"
       :skinsList="skinsList"
-      @unlock="unlockDistrictsAll"
+      @unlockdistricts="unlockDistrictsAll"
       @refresh="loadGameData" />
 
     <SurfersGrid :uiSurfers="uiSurfers" :skinsList="skinsList" />

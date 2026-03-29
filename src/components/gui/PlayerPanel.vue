@@ -76,7 +76,7 @@
     </div>
 
     <div style="margin-top: 12px; display: flex; gap: 8px; align-items: center">
-      <button class="btn" @click.prevent="$emit('unlock')">
+      <button class="btn" @click.prevent="$emit('unlockdistricts')">
         Unlock All Districts
       </button>
       <button class="btn" @click.prevent="$emit('refresh')">
@@ -88,7 +88,7 @@
 
 <script setup>
 defineProps(["state", "skinsList"]);
-const emit = defineEmits(["unlock", "refresh"]);
+const emit = defineEmits(["unlockdistricts", "refresh"]);
 </script>
 
 <style scoped></style>
