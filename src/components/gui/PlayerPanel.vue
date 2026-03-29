@@ -7,7 +7,7 @@
       min="1"
       max="2147483647"
       pattern="[0-9]*"
-      @input="(e) => (e.target.value = e.target.value.replace(/\D/g, ''))" />
+      @input="(e) => (e.target.value = e.target.value.replace(/\D/g, ''))"
     <label>XP</label>
     <input
       type="number"
@@ -15,7 +15,7 @@
       min="1"
       max="2147483647"
       pattern="[0-9]*"
-      @input="(e) => (e.target.value = e.target.value.replace(/\D/g, ''))" />
+      @input="(e) => (e.target.value = e.target.value.replace(/\D/g, ''))"
 
     <div style="margin-top: 12px">
       <label>Character</label>
@@ -39,7 +39,7 @@
         <option
           v-for="(b, idx) in state.boards"
           :key="idx"
-          :value="b.dataTag || b.id || b">
+        >
           {{
             (state.boardsLinks &&
               state.boardsLinks[idx] &&
@@ -69,7 +69,7 @@
         <option
           v-for="d in state.districts"
           :key="d.dataTag || d.id || d"
-          :value="d.dataTag || d.id || d">
+        >
           {{ d.name || d.ladderId || d.id || d }}
         </option>
       </select>
