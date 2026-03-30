@@ -7,6 +7,7 @@ import PlayerPanel from "./gui/PlayerPanel.vue";
 import SurfersGrid from "./gui/SurfersGrid.vue";
 import BoardsGrid from "./gui/BoardsGrid.vue";
 import SeasonPanel from "./gui/SeasonPanel.vue";
+import SkinUnlocker from "./gui/SkinPanel.vue";
 
 const guiInner = ref(null);
 
@@ -367,6 +368,11 @@ function readToInner() {
   guiInner.value.seasonPassPoints =
     parseInt(getVal("sp-points-val")) || guiInner.value.seasonPassPoints || 0;
 
+  // Ensure surferSkinProfiles exists
+  if (!Array.isArray(guiInner.value.surferSkinProfiles)) {
+    guiInner.value.surferSkinProfiles = [];
+  }
+
   return guiInner.value;
 }
 
@@ -421,6 +427,31 @@ function applySpPoints() {
   const msg = document.getElementById("msg-sp");
   if (msg) msg.textContent = "Points set: " + v;
 }
+
+function handleSkinUpdate({ surferId, skinId, isUnlocked }) {
+  if (!guiInner.value) guiInner.value = {};
+  if (!Array.isArray(guiInner.value.surferSkinProfiles))
+    guiInner.value.surferSkinProfiles = [];
+
+  // Find or create the skin profile
+  let skinProfile = guiInner.value.surferSkinProfiles.find(
+    (sp) => sp.id === skinId,
+  );
+
+  if (!skinProfile) {
+    skinProfile = {
+      id: skinId,
+      isUnlocked: false,
+      wasSeen: false,
+    };
+    guiInner.value.surferSkinProfiles.push(skinProfile);
+  }
+
+  skinProfile.isUnlocked = isUnlocked;
+  if (isUnlocked) {
+    skinProfile.wasSeen = true;
+  }
+}
 </script>
 
 <template>
@@ -463,6 +494,16 @@ function applySpPoints() {
         class="tab"
         @click="
           (e) => {
+            switchTab('skins', e.target);
+          }
+        "
+      >
+        Skins
+      </button>
+      <button
+        class="tab"
+        @click="
+          (e) => {
             switchTab('boards', e.target);
           }
         "
@@ -483,16 +524,25 @@ function applySpPoints() {
 
     <WalletPanel />
 
-    <PlayerPanel
-      :state="state"
-      @refresh="loadGameData"
-    />
+    <PlayerPanel :state="state" @refresh="loadGameData" />
 
     <SurfersGrid :uiSurfers="uiSurfers" :skinsList="skinsList" />
 
     <BoardsGrid :uiBoards="uiBoards" />
 
     <SeasonPanel @toggle-sp="toggleSP" @apply-sp="applySpPoints" />
+
+    <SkinUnlocker
+      :uiSurfers="uiSurfers"
+      :skinsList="skinsList"
+      :surferSkinProfiles="
+        guiInner && guiInner.surferSkinProfiles
+          ? guiInner.surferSkinProfiles
+          : []
+      "
+      :skins="state.skins"
+      @update-skins="handleSkinUpdate"
+    />
   </div>
 </template>
 
